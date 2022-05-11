@@ -1,9 +1,9 @@
 import click
 import os
 
-from goon_parser.parser import get_json, get_python
+from parser import get_json, get_python
 from typing import Callable
-from goon_parser.util import mkdir
+from util import mkdir
 
 
 @click.group(chain=True)
