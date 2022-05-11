@@ -3,6 +3,7 @@ name = "goon_parser"
 version = "0.1.0"
 description = "A python package used to parse ss13 dm files into json"
 authors = ["Kyle Oliver <56kyleoliver@gmail.com>"]
+readme = "README.md"
 
 
 [tool.poetry.dependencies]
