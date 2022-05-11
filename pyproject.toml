@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "goon_parser"
+version = "0.1.0"
+description = "A python package used to parse ss13 dm files into json"
+authors = ["Kyle Oliver <56kyleoliver@gmail.com>"]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+
+[tool.poetry.scripts]
+generate = "goon_parser.cli:generate"
+json = "goon_parser.cli:json"
+python = "goon_parser.cli:py"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

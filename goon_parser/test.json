@@ -1,0 +1,417 @@
+{
+    "obj": {
+        "item": {
+            "reagent_containers": {
+                "food": {
+                    "inhand_image_icon": "icons/mob/inhand/hand_food.dmi",
+                    "var": {
+                        "heal_amt": "0",
+                        "needfork": "0",
+                        "needspoon": "0",
+                        "food_color": "#FF0000",
+                        "custom_food": "1",
+                        "festivity": "0",
+                        "brewable": "0",
+                        "brew_result": null,
+                        "unlock_medal_when_eaten": null,
+                        "from_emagged_oven": "0",
+                        "doants": "1",
+                        "made_ants": "0",
+                        "sliceable": "FALSE",
+                        "slice_product": null,
+                        "slice_amount": "0"
+                    },
+                    "rc_flags": "0",
+                    "snacks": {
+                        "name": "snack",
+                        "desc": "yummy",
+                        "icon": "icons/obj/foodNdrink/food.dmi",
+                        "icon_state": null,
+                        "heal_amt": "1",
+                        "initial_volume": "100",
+                        "festivity": "0",
+                        "rc_flags": "0",
+                        "edible": "1",
+                        "rand_pos": "1",
+                        "var": {
+                            "has_cigs": "0",
+                            "use_bite_mask": "TRUE",
+                            "current_mask": "5",
+                            "list": {
+                                "food_effects": []
+                            },
+                            "create_time": "0",
+                            "bites_left": "3",
+                            "dropped_item": null,
+                            "meal_time_flags": "0"
+                        },
+                        "bite": {
+                            "name": "half-digested food chunk",
+                            "desc": "This is a chunk of partially digested food.",
+                            "icon": "icons/obj/foodNdrink/food.dmi",
+                            "icon_state": "foodchunk",
+                            "heal_amt": "0",
+                            "initial_volume": "100",
+                            "festivity": "0",
+                            "rc_flags": "0",
+                            "edible": "1",
+                            "rand_pos": "1",
+                            "bites_left": "1",
+                            "var": {
+                                "did_react": "0"
+                            }
+                        }
+                    },
+                    "drinks": {
+                        "name": "drink",
+                        "desc": "yummy",
+                        "icon": "icons/obj/foodNdrink/drinks.dmi",
+                        "inhand_image_icon": "icons/mob/inhand/hand_food.dmi",
+                        "icon_state": null,
+                        "flags": "FPRINT | TABLEPASS | OPENCONTAINER | SUPPRESSATTACK",
+                        "rc_flags": "RC_FULLNESS | RC_VISIBLE | RC_SPECTRO",
+                        "var": {
+                            "gulp_size": "5",
+                            "splash_all_contents": "1",
+                            "can_recycle": "1",
+                            "can_chug": "1"
+                        },
+                        "doants": "0",
+                        "throw_speed": "1",
+                        "bowl": {
+                            "name": "bowl",
+                            "desc": "A bowl is a common open-top container used in many cultures to serve food, and is also used for drinking and storing other items.",
+                            "icon": "icons/obj/kitchen.dmi",
+                            "icon_state": "bowl",
+                            "item_state": "zippo",
+                            "initial_volume": "50",
+                            "var": {
+                                "image": {
+                                    "fluid_image": null
+                                }
+                            }
+                        },
+                        "bottle": {
+                            "name": "bottle",
+                            "icon": "icons/obj/foodNdrink/bottle.dmi",
+                            "icon_state": "bottle",
+                            "desc": "A stylish bottle for the containment of liquids.",
+                            "var": {
+                                "label": "none",
+                                "labeled": "0",
+                                "static": {
+                                    "image": {
+                                        "image_fluid": null,
+                                        "image_label": null,
+                                        "image_ice": null
+                                    }
+                                },
+                                "ice": null,
+                                "unbreakable": "0",
+                                "broken": "0",
+                                "bottle_style": "clear",
+                                "fluid_style": "bottle",
+                                "alt_filled_state": null,
+                                "fluid_underlay_shows_volume": "FALSE",
+                                "shatter": "0"
+                            },
+                            "initial_volume": "50",
+                            "g_amt": "60",
+                            "custom_suicide": "1",
+                            "soda": {
+                                "fluid_underlay_shows_volume": "TRUE"
+                            }
+                        },
+                        "drinkingglass": {
+                            "name": "drinking glass",
+                            "desc": "Caution - fragile.",
+                            "icon": "icons/obj/foodNdrink/drinks.dmi",
+                            "icon_state": "glass-drink",
+                            "item_state": "drink_glass",
+                            "var": {
+                                "icon_style": "drink",
+                                "glass_style": "drink",
+                                "salted": "0",
+                                "obj": {
+                                    "item": {
+                                        "reagent_containers": {
+                                            "food": {
+                                                "snacks": {
+                                                    "plant": {
+                                                        "wedge": null
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "cocktail_stuff": {
+                                            "drink_umbrella": {
+                                                "umbrella": null
+                                            },
+                                            "in_glass": null
+                                        }
+                                    }
+                                },
+                                "smashed": "0",
+                                "shard_amt": "1"
+                            },
+                            "g_amt": "30",
+                            "initial_volume": "50",
+                            "shot": {
+                                "name": "shot glass",
+                                "icon_state": "glass-shot",
+                                "glass_style": "shot",
+                                "amount_per_transfer_from_this": "15",
+                                "gulp_size": "15",
+                                "initial_volume": "15",
+                                "syndie": {
+                                    "amount_per_transfer_from_this": "50",
+                                    "gulp_size": "50",
+                                    "initial_volume": "50"
+                                }
+                            },
+                            "oldf": {
+                                "name": "old fashioned glass",
+                                "icon_state": "glass-oldf",
+                                "glass_style": "oldf",
+                                "initial_volume": "20"
+                            },
+                            "round": {
+                                "name": "round glass",
+                                "icon_state": "glass-round",
+                                "glass_style": "round",
+                                "initial_volume": "100"
+                            },
+                            "wine": {
+                                "name": "wine glass",
+                                "icon_state": "glass-wine",
+                                "glass_style": "wine",
+                                "initial_volume": "30"
+                            },
+                            "cocktail": {
+                                "name": "cocktail glass",
+                                "icon_state": "glass-cocktail",
+                                "glass_style": "cocktail",
+                                "initial_volume": "20"
+                            },
+                            "flute": {
+                                "name": "champagne flute",
+                                "icon_state": "glass-flute",
+                                "glass_style": "flute",
+                                "initial_volume": "20"
+                            },
+                            "pitcher": {
+                                "name": "glass pitcher",
+                                "desc": "A big container for holding a lot of liquid that you then serve to people. Probably alcohol, let's be honest.",
+                                "icon_state": "glass-pitcher",
+                                "glass_style": "pitcher",
+                                "initial_volume": "120",
+                                "shard_amt": "2"
+                            },
+                            "icing": {
+                                "name": "icing tube",
+                                "desc": "Used to put icing on cakes.",
+                                "icon": "icons/obj/foodNdrink/food.dmi",
+                                "icon_state": "icing_tube",
+                                "initial_volume": "50",
+                                "amount_per_transfer_from_this": "5",
+                                "can_recycle": "FALSE",
+                                "var": {
+                                    "image": {
+                                        "chem": "new /image('icons/obj/foodNdrink/food.dmi',\"icing_tube_chem\")"
+                                    }
+                                }
+                            },
+                            "random_style": {
+                                "rand_pos": "1",
+                                "filled": {
+                                    "var": {
+                                        "list": {
+                                            "whitelist": null,
+                                            "blacklist": [
+                                                "big_bang_precursor",
+                                                "big_bang",
+                                                "nitrotri_parent",
+                                                "nitrotri_wet",
+                                                "nitrotri_dry"
+                                            ]
+                                        }
+                                    },
+                                    "sane": {
+                                        "whitelist": "list(\"bilk\", \"milk\", \"chocolate_milk\", \"strawberry_milk\", \"beer\", \"cider\","
+                                    }
+                                }
+                            }
+                        },
+                        "duo": {
+                            "name": "red duo cup",
+                            "desc": "Can't imagine a party without a few dozen these on the lawn afterward.",
+                            "icon_state": "duo",
+                            "item_state": "duo",
+                            "initial_volume": "30",
+                            "can_recycle": "FALSE"
+                        },
+                        "skull_chalice": {
+                            "name": "skull chalice",
+                            "desc": "A thing which you can drink fluids out of. Um. It's made from a skull. Considering how many holes are in skulls, this is perhaps a questionable design.",
+                            "icon_state": "skullchalice",
+                            "item_state": "skullchalice",
+                            "can_recycle": "FALSE"
+                        },
+                        "mug": {
+                            "name": "mug",
+                            "desc": "A standard mug, for coffee or tea or whatever you wanna drink.",
+                            "icon_state": "mug",
+                            "item_state": "mug",
+                            "dan": {
+                                "name": "odd mug",
+                                "desc": "A nondescript ceramic mug. Something about it seems a bit strange.",
+                                "icon_state": "dan_mug",
+                                "item_state": "dan_mug",
+                                "initial_volume": "120"
+                            },
+                            "dan_drunk": {
+                                "name": "odd mug",
+                                "desc": "A nondescript ceramic mug. Something about it seems a bit strange.",
+                                "icon_state": "dan_mug",
+                                "item_state": "dan_mug",
+                                "initial_volume": "120",
+                                "initial_reagents": {
+                                    "coffee": 80,
+                                    "vodka": 40
+                                }
+                            },
+                            "HoS": {
+                                "name": "Head of Security's mug",
+                                "desc": "",
+                                "icon_state": "HoSMug",
+                                "item_state": "mug",
+                                "blue": {
+                                    "icon_state": "HoSMugBlue",
+                                    "item_state": "mug"
+                                }
+                            }
+                        },
+                        "paper_cup": {
+                            "name": "paper cup",
+                            "desc": "A cup made of paper. It's not that complicated.",
+                            "icon_state": "paper_cup",
+                            "item_state": "drink_glass",
+                            "initial_volume": "15",
+                            "can_recycle": "0"
+                        },
+                        "espressocup": {
+                            "name": "espresso cup",
+                            "desc": "A fancy espresso cup, for sipping in the finest establishments.",
+                            "icon_state": "fancycoffee",
+                            "item_state": "coffee",
+                            "initial_volume": "20",
+                            "gulp_size": "2.5",
+                            "g_amt": "2.5",
+                            "var": {
+                                "glass_style": "fancycoffee"
+                            }
+                        },
+                        "carafe": {
+                            "name": "coffee carafe",
+                            "desc": null,
+                            "icon_state": "carafe-eng",
+                            "item_state": "carafe-eng",
+                            "initial_volume": "100",
+                            "can_chug": "0",
+                            "var": {
+                                "smashed": "0",
+                                "shard_amt": "1"
+                            },
+                            "medbay": {
+                                "icon_state": "carafe-med",
+                                "item_state": "carafe-med"
+                            },
+                            "botany": {
+                                "icon_state": "carafe-hyd",
+                                "item_state": "carafe-hyd"
+                            },
+                            "security": {
+                                "icon_state": "carafe-sec",
+                                "item_state": "carafe-sec"
+                            },
+                            "research": {
+                                "icon_state": "carafe-sci",
+                                "item_state": "carafe-sci"
+                            }
+                        },
+                        "coconut": {
+                            "name": "Coconut",
+                            "desc": "Must be migrational.",
+                            "icon": "icons/obj/foodNdrink/drinks.dmi",
+                            "icon_state": "coconut",
+                            "item_state": "drink_glass",
+                            "g_amt": "30",
+                            "initial_volume": "50",
+                            "can_recycle": "FALSE",
+                            "initial_reagents": {
+                                "coconut_milk": 20
+                            }
+                        },
+                        "energyshake": {
+                            "name": "Brotein Shake - Dragon Balls flavor",
+                            "desc": "{\"Do you want to get PUMPED UP? Try this 100% NATURAL shake FRESH from the press!",
+                            "icon_state": "energy",
+                            "item_state": "drink_glass",
+                            "g_amt": "10",
+                            "initial_volume": "25",
+                            "initial_reagents": {
+                                "energydrink": 20
+                            }
+                        },
+                        "flask": {
+                            "name": "flask",
+                            "desc": "For the busy alcoholic.",
+                            "icon": "icons/obj/foodNdrink/bottle.dmi",
+                            "icon_state": "flask",
+                            "item_state": "flask",
+                            "g_amt": "5",
+                            "initial_volume": "40",
+                            "can_recycle": "FALSE",
+                            "det": {
+                                "name": "detective's flask",
+                                "desc": "Must be migrational.",
+                                "icon": "icons/obj/foodNdrink/bottle.dmi",
+                                "icon_state": "detflask",
+                                "item_state": "detflask",
+                                "initial_reagents": {
+                                    "bojack": 40
+                                }
+                            }
+                        },
+                        "cocktailshaker": {
+                            "name": "cocktail shaker",
+                            "desc": "A stainless steel tumbler with a top, used to mix cocktails. Can hold up to 120 units.",
+                            "icon": "icons/obj/foodNdrink/bottle.dmi",
+                            "icon_state": "cocktailshaker",
+                            "initial_volume": "120",
+                            "can_recycle": "0",
+                            "can_chug": "0",
+                            "golden": {
+                                "name": "golden cocktail shaker",
+                                "desc": "A golden plated tumbler with a top, used to mix cocktails. Can hold up to 120 units. So rich! So opulent! So... tacky.",
+                                "icon_state": "golden_cocktailshaker"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "datum": {
+        "action": {
+            "bar": {
+                "icon": {
+                    "chug": {
+                        "duration": "0.5 SECONDS",
+                        "id": "chugging"
+                    }
+                }
+            }
+        }
+    }
+}
