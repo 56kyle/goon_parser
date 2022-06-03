@@ -1,9 +1,9 @@
 import click
 import os
 
-from parser import get_json, get_python
+from .parser import get_json
 from typing import Callable
-from util import mkdir
+from .util import mkdir
 
 
 @click.group(chain=True)
@@ -32,18 +32,6 @@ def generate_json(source: str, dest: str, force: bool, recursive: bool):
         ending='.json'
     )
 
-@generate.command('python')
-def generate_python(source: str, dest: str, force: bool, recursive: bool):
-    print('generate_python')
-    _generate(
-        source=source,
-        dest=dest,
-        force=force,
-        recursive=recursive,
-        method=get_python,
-        ending='.py',
-    )
-
 def _generate(source: str, dest: str, force: bool, recursive: bool, method: Callable[[str], str], ending: str):
     print('_generate')
     source = os.path.abspath(source)
@@ -70,8 +58,8 @@ def _generate(source: str, dest: str, force: bool, recursive: bool, method: Call
 
 def _generate_file(source: str, dest: str, force: bool, method: Callable[[str], str], ending: str):
     print('_generate_file')
-    if not source.endswith('.dm'):
-        raise click.BadArgumentUsage('Source file must be a .dm file.')
+    if not source.endswith('.dm') and not source.endswith('.dmm'):
+        raise click.BadArgumentUsage('Source file must be a .dm or .dmm file.')
     dest = os.path.splitext(dest)[0] + ending
 
     if force or not os.path.exists(dest):

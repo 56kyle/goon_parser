@@ -10,6 +10,10 @@
 
 
 ## Usage
+##### CLI
+    - Poetry
+    poetry run generate json './path/to/file.dm' './path/to/output.json'
+
 ##### Parser
     from goon_parser.parser import get_dict, get_json
 
