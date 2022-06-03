@@ -13,6 +13,12 @@
 ##### CLI
     - Poetry
     poetry run generate json './path/to/file.dm' './path/to/output.json'
+    poetry run generate json -r './path/to/folder' './path/to/output/folder'
+    
+    - Flags
+    -r / --recursive = Will iterate through all files in the given folder and all sub folders
+    -f / --force = Will overwrite any files that are written if they exist already
+    
 
 ##### Parser
     from goon_parser.parser import get_dict, get_json
